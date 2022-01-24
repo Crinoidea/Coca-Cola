@@ -1,0 +1,10 @@
+.title {
+    color: white;
+    &-risque {
+        font-family: 'Risque', cursive;
+    }    
+    &-fs16 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
