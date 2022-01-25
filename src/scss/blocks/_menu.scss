@@ -1,0 +1,88 @@
+.menu {
+    width: 60px;
+    height: 60px;
+    &__block {
+        position: fixed;
+        right: 49px;
+        top: 39px;
+        width: inherit;
+        height: inherit;
+        background: $color-red;
+        box-shadow: 4px 8px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 100px 0px 100px 100px;
+        cursor: pointer;
+        z-index: 20;
+        transition: transform 1s;
+
+        &_active {
+            position: fixed;
+            right: -681px;
+            top: -681px;
+            width: 1520px;
+            height: 1520px;
+            border-radius: 100%;
+        }
+    }
+    &__close {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 0px;
+        span {
+            display: block;
+            height: 3.7px;
+            width: 34px;
+            background-color: #fff;
+            transition: 0.5s all;
+            position: relative;
+            z-index: 25;
+        }
+        &_active {
+            position: fixed;
+            top: 725px;
+            right: 731px;
+            z-index: 25;
+            span {
+                position: fixed;
+                z-index: 25;
+                &:nth-last-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-last-child(2) {
+                    display: none;
+                }
+                &:nth-last-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    &__nav {
+        position: fixed;
+        height: 100vh;
+        top: 60%;
+        left: 438px
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 247px;
+    }
+    &__link {
+        font-size: 32px;
+        line-height: 37px;
+        &:hover {
+            text-decoration: none;
+            color:rgba(0, 0, 0, 1);
+            transition: .3s all;
+        }
+    }
+    
+    
+}

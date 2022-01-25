@@ -11,7 +11,7 @@
         height: 65px;
         width: 198px;
     }
-    &__menu {
+    &__nav {
         margin-left: 512px;
         width: 395px;
         height: 60px;
@@ -25,27 +25,6 @@
             text-decoration: none;
             color: $color-red;
             transition: 0.2s all;
-        }
-    }
-    &__hamburger {
-        padding: 19px 0px;
-        width: 60px;
-        height: 60px;
-        background: $color-red;
-        box-shadow: 4px 8px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 100px 0px 100px 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        span {
-            display: block;
-            margin: 0 auto;
-            height: 3.7px;
-            width: 34px;
-            background-color: #fff;
-            
         }
     }
 }

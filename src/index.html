@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coca Cola</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -13,24 +14,24 @@
             <img src="icons/logo.png" alt="logo" class="header__logo">
         </a>
         <nav>
-            <ul class="header__menu">
+            <ul class="header__nav">
                 
-                <li class="header__item">
+                <li>
                     <a href="#" class="header__link  title title_fs16">
                         Main
                     </a>
                 </li>
-                <li class="header__item">
+                <li>
                     <a href="#" class="header__link  title title_fs16">
                         About
                     </a>
                 </li>
-                <li class="header__item">
+                <li>
                     <a href="#" class="header__link  title title_fs16">
                         Products
                     </a>
                 </li>
-                <li class="header__item">
+                <li>
                     <a href="#" class="header__link  title title_fs16">
                         Contacts
                     </a>
@@ -38,25 +39,45 @@
 
             </ul>
         </nav>
-        <div class="header__hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <div class="menu">
+            <div class="menu__block">
+                <div class="menu__close">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+    
+                <nav class="menu__nav hide">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#" class="menu__link title title_risque">
+                                Main
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link title title_risque">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link title title_risque">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link title title_risque">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu__overlay hide"></div>
         </div>
+
     </header>
 
-    <div class="menu hide">
-        <div class="menu__close"></div>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__item"></li>
-                <li class="menu__item"></li>
-                <li class="menu__item"></li>
-                <li class="menu__item"></li>
-            </ul>
-        </nav>
-        <div class="menu__overlay"></div>
-    </div>
 
     <img src="img/snowflake.svg" alt="snowflake" class="snowflake">
 
@@ -83,7 +104,8 @@
             Scroll down for more !
         </div>
     </section>
-    
+
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

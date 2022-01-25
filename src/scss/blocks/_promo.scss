@@ -2,7 +2,7 @@
     position: relative;
     padding: 253px 0 50px 93px;
     height: 100vh;
-    background: url(../img/promo/santa.png) bottom right/auto no-repeat, rgba(20, 20, 41, 1);
+    background: url(../img/promo/santa.png) bottom right/auto no-repeat, $color-blue;
     &__stars {
         display: block;
         position: absolute;

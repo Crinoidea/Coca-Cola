@@ -1,0 +1,13 @@
+@keyframes openMenu {
+    from {
+        width: 60px;
+        height: 60px;
+    }
+    to {
+        position: fixed;
+        right: -681px;
+        width: 1520px;
+        height: 1520px;
+        border-radius: 100%;
+    }
+}
