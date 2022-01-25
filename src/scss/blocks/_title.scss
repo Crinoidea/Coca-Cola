@@ -1,5 +1,6 @@
 .title {
     color: white;
+    font-weight: 400;
     &_risque {
         font-family: 'Risque', cursive;
     }    
@@ -10,5 +11,9 @@
     &_fs38 {
         font-size: 38px;
         line-height: 44px; 
+    }
+    &_fs56 {
+        font-size: 56px;
+        line-height: 65px;
     }
 }
