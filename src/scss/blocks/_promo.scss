@@ -1,4 +1,64 @@
 .promo {
-    min-height: 100vh;
-    background-color: #141429;
+    position: relative;
+    padding: 253px 0 50px 93px;
+    height: 100vh;
+    background: url(../img/promo/santa.png) bottom right/auto no-repeat, rgba(20, 20, 41, 1);
+    &__stars {
+        display: block;
+        position: absolute;
+        width: 1330px;
+        height: 624px;
+        top: 80px;
+        left: 53%;
+        transform: translateX(-47%);
+        z-index: 1;
+    }
+    .container {
+        height: 100%;
+    }
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__header {
+        font-size: 72px;
+        line-height: 83px;
+    }
+    &__subheader {
+        margin-top: 20px;
+    }
+    &__btn {
+        margin-top: 20px;
+        position: relative;
+        width: 186.35px;
+        height: 44px;
+        border: 2px solid #FFFFFF;
+        background: none;
+        border-radius: 20px 20px 20px 0px;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+        &:hover {
+            background-color: #fff;
+            color: rgb(20, 20, 41);
+        }
+    }
+    &__arrow {
+        width: 38px;
+        height: 38px;
+    }
+    &__message {
+        position: absolute;
+        right: 513px;
+        bottom: 240px;
+        padding: 61px 51px 53px 35px;
+        width: auto;
+        height: 190px;
+        background: url(../img/promo/cloud.png) center center/cover no-repeat;
+        font-size: 18px;
+        line-height: 21px;
+        color: black;
+    }
+    
 }

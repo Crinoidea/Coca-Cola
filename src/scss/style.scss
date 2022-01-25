@@ -7,11 +7,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* .container {
+.container {
     margin: 0 auto;
-    width: 100%;
-    padding: 0 10px;
-} */
+    width: 1300px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.body {
+    position: relative;
+}
+.snowflake {
+    position: absolute;
+    width: 523px;
+    height: 523px;
+    bottom: 40px;
+    left: -218px;
+}
 
 @import 'base/variables';
 @import 'blocks/title';

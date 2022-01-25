@@ -9,27 +9,29 @@
 </head>
 <body>
     <header class="header">
-        <img src="icons/logo.svg" alt="logo" class="header__logo">
+        <a href="#">
+            <img src="icons/logo.png" alt="logo" class="header__logo">
+        </a>
         <nav>
             <ul class="header__menu">
                 
                 <li class="header__item">
-                    <a href="#" class="header__link  title title-fs16">
+                    <a href="#" class="header__link  title title_fs16">
                         Main
                     </a>
                 </li>
-                <li class="header__item title title-fs16">
-                    <a href="#" class="header__link  title title-fs16">
+                <li class="header__item">
+                    <a href="#" class="header__link  title title_fs16">
                         About
                     </a>
                 </li>
-                <li class="header__item title title-fs16">
-                    <a href="#" class="header__link  title title-fs16">
+                <li class="header__item">
+                    <a href="#" class="header__link  title title_fs16">
                         Products
                     </a>
                 </li>
-                <li class="header__item title title-fs16">
-                    <a href="#" class="header__link  title title-fs16">
+                <li class="header__item">
+                    <a href="#" class="header__link  title title_fs16">
                         Contacts
                     </a>
                 </li>
@@ -43,7 +45,7 @@
         </div>
     </header>
 
-    <!-- <div class="menu">
+    <div class="menu hide">
         <div class="menu__close"></div>
         <nav>
             <ul class="menu__list">
@@ -54,24 +56,32 @@
             </ul>
         </nav>
         <div class="menu__overlay"></div>
-    </div> -->
+    </div>
+
+    <img src="img/snowflake.svg" alt="snowflake" class="snowflake">
 
     <section class="promo">
-        <!-- <div class="container">
-            <h1 class="promo__header">Main Site Title</h1>
-            <h3 class="promo__subheader">Lorem ipsum descripsum</h3>
-            <button class="promo__btn">Call to action</button>
+        <img src="img/promo/stars.svg" alt="stars" class="promo__stars">
 
-            <img src="icons/arrow.svg" alt="arrow" class="promo__arrow">
+        <div class="container">
+            <div class="promo__wrapper">
+                <div>
+                    <h1 class="promo__header title title_risque">Main Site Title</h1>
+                    <h3 class="promo__subheader title title_risque title_fs38">Lorem ipsum descripsum</h3>
+                    <button class="promo__btn title title_fs16">Call to action</button>
+                </div>
+
+                <a href="#">
+                    <img src="icons/arrow.svg" alt="arrow" class="promo__arrow">
+                </a>
+            </div>
         </div>
 
-        <div class="promo__message">
-            <img src="img/main/message.svg" alt="message" class="promo__message-bg">
-            <div class="promo__message-text">
-                How how how !!! <br>
-                Like it? <br>
-                Scroll down for more !</div>
-        </div> -->
+        <div class="promo__message title_risque">
+            How how how !!! <br>
+            Like it? <br>
+            Scroll down for more !
+        </div>
     </section>
     
     <script src="js/script.js"></script>
