@@ -50,13 +50,8 @@
         appearance: none;
         outline: 0;
             option {
-                padding: 16px 0 14px 21px;
                 background-color: #fff;
                 color: #CECECE;
-                &:hover {
-                    color: $color-red;
-
-                }
             }
 
     }
