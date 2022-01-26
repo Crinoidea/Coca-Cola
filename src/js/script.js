@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     new WOW().init();
 
+    //open menu
     const menu = document.querySelector('.menu__block'),
           trigger = document.querySelector('.menu__close'),
           menuOverlay = document.querySelector('.menu__overlay'),
@@ -39,4 +40,34 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //Tabs present
+
+    const tabs = document.querySelectorAll('.product__presents-item'),
+          tabsContent = document.querySelectorAll('.product__content');
+
+    function showTabsContent(index = 0) {
+        tabsContent[index].classList.add('show_flex', 'fade');
+        tabsContent[index].classList.remove('hide');
+
+        tabs[index].classList.add('product__presents-item_active');
+    }
+
+    function hideTabsContent() {
+        tabsContent.forEach((item) => {
+            item.classList.remove('show_flex', 'fade');
+            item.classList.add('hide');
+        });
+        
+        tabs.forEach(item => {
+            item.classList.remove('product__presents-item_active');
+        });
+    }
+    
+    tabs.forEach((item, index) => {
+        item.addEventListener('click', () => {
+                hideTabsContent();
+                showTabsContent(index);
+            }        
+        );
+    });
 });

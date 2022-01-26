@@ -11,11 +11,12 @@
     margin: 0 auto;
     width: 1327px;
 }
-.hide {
-    display: none;
-}
+
 .show {
     display: block;
+}
+.show_flex {
+    display: flex;
 }
 .body {
     position: relative;
@@ -36,3 +37,7 @@
 @import 'blocks/menu';
 @import 'blocks/product';
 @import 'blocks/contact';
+
+.hide {
+    display: none;
+}
