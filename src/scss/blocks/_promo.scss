@@ -12,6 +12,10 @@
         left: 53%;
         transform: translateX(-47%);
         z-index: 1;
+        animation-iteration-count: infinite;
+        animation-duration: 7s;
+        animation-timing-function: ease-out;
+
     }
     .container {
         height: 100%;
