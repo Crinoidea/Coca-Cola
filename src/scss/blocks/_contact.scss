@@ -1,7 +1,8 @@
 .contact {
     height: 100vh;
     padding: 181px 0 161px 14px;
-    background: url(../img/contact/bg.jpg) center center/cover no-repeat;
+    /* background: url(../img/contact/bg.jpg) center center/cover no-repeat; */
+    background-color: black;
     &__wrapper {
         max-width: 468px;
     }
@@ -42,6 +43,22 @@
         &:-ms-input-placeholder {  
             color: #fff;
         }
+    }
+    &__select {
+        padding: 11px 19px;
+        background: url(../icons/select.png) 93% 50%/18px 11px no-repeat;
+        appearance: none;
+        outline: 0;
+            option {
+                padding: 16px 0 14px 21px;
+                background-color: #fff;
+                color: #CECECE;
+                &:hover {
+                    color: $color-red;
+
+                }
+            }
+
     }
     &__text {
         margin-top: 17px;
