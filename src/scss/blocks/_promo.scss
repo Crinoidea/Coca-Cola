@@ -33,7 +33,7 @@
     &__wrapper {
         padding-left: 106px;
         height: 100%;
-        max-width: 451px;
+        max-width: 567px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -48,6 +48,7 @@
     &__btn {
         margin-top: 20px;
         position: relative;
+        display: block;
         width: 186.35px;
         height: 44px;
         border: 2px solid #FFFFFF;
