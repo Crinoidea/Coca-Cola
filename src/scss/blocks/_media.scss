@@ -1,0 +1,26 @@
+@media  (max-width: 1442px) {
+    .container {
+        width: 1220px;
+    }
+    .header {
+        &__nav {
+            margin-left: 100px;
+        }
+    }
+    .promo {
+        padding-left: 50px; 
+        background-size: 65%;
+        &__message {
+            right: 440px;
+        }
+    }
+    .title {
+        &_fs56 {
+            font-size: 50px;
+        }
+    }
+    .product {
+        padding-right: 39px;
+    }
+
+}
