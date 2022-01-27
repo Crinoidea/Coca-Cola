@@ -1,14 +1,14 @@
 .promo {
     position: relative;
-    padding: 253px 0 50px 106px;
+    padding: 253px 0 50px 0;
     height: 100vh;
     background: url(../img/promo/santa.png) bottom right/auto no-repeat, $color-blue;
     &__stars {
-        display: block;
         position: absolute;
-        width: 1330px;
-        height: 624px;
-        top: 80px;
+        background: url(../img/promo/stars.svg) center center/contain no-repeat;
+        width: 1200px;
+        height: 500px;
+        top: 50px;
         left: 53%;
         transform: translateX(-47%);
         z-index: 1;
@@ -21,7 +21,9 @@
         height: 100%;
     }
     &__wrapper {
+        padding-left: 106px;
         height: 100%;
+        max-width: 451px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

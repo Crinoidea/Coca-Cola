@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Scroll page
-    $.scrollify({
+    /* $.scrollify({
         section : "section",
         sectionName : "section-name",
         interstitialSection : "",
@@ -98,5 +98,5 @@ window.addEventListener('DOMContentLoaded', () => {
             $("a").on("click",$.scrollify.move);
             $(".promo__btn").on("click",$.scrollify.move);
         }
-    });
+    }); */
 });
