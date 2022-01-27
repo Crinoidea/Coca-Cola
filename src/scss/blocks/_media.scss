@@ -1,4 +1,4 @@
-@media  (max-width: 1442px) {
+@media  (max-width: 1440px) {
     .container {
         width: 1120px;
     }
@@ -10,6 +10,11 @@
     .promo {
         min-height: 750px;
         background-size: 800px auto;
+        &__santa {
+            width: 70%;
+            height: 70%;
+            background-size: contain;
+        }
         &__wrapper {
             padding-left: 50px; 
         }
@@ -17,10 +22,11 @@
             right: 440px;
         }
         &__stars {
-            top: 80px;
             left: 50%;
             transform: translateX(-50%);
-            width: 1000px;
+            width: 85%;
+            height: 85%;
+            background-size: contain;
         }
     }
     .title {
@@ -58,9 +64,6 @@
         &__message {
             display: none;
         }
-        &__stars {
-            width: 960px;
-        }
     }
     .product {
         padding: 94px 0 80px;
@@ -75,6 +78,35 @@
         }
         &__content {
             margin-top: 74px;
+        }
+    }
+    .contact {
+        min-height: 755px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz38 {
+            font-size: 28px;
+            line-height: 32px; 
+        }
+    }
+    .snowflake {
+        display: none;
+    }
+    .header {
+        &__nav {
+            display: none;
+        }
+    }
+    .promo {
+        &__stars {
+            background-size: cover;
+            background-repeat: repeat;
         }
     }
 }
