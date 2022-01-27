@@ -8,6 +8,7 @@
         }
     }
     .promo {
+        height: unset;
         min-height: 750px;
         background-size: 800px auto;
         &__santa {
@@ -67,6 +68,7 @@
     }
     .product {
         padding: 94px 0 80px;
+        height: unset;
         min-height: 1100px;
         &__wrapper {
             padding: 0 27px;
@@ -81,6 +83,7 @@
         }
     }
     .contact {
+        height: unset;
         min-height: 755px;
     }
 }
@@ -90,7 +93,7 @@
         max-width: 720px;
     }
     .title {
-        &_fz38 {
+        &_fs38 {
             font-size: 28px;
             line-height: 32px; 
         }
@@ -107,6 +110,77 @@
         &__stars {
             background-size: cover;
             background-repeat: repeat;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        padding: 26px 27px 0;
+    }
+    .menu {
+        &__close {
+            top: 29px;
+            right: 27px;
+        }
+        &__block {
+            top: 29px;
+            right: 27px;
+        }
+    }
+    .promo {
+        padding: 223px 0 393px;
+        &__arrow {
+            display: none;
+        }
+        &__wrapper {
+            height: 192px;
+        }
+        &__subheader {
+            margin-top: 13px;
+        }
+        &__btn {
+            margin-top: 43px;
+        }
+    }
+    .product {
+        &__header {
+            margin-top: 0;
+        }
+        &__subheader {
+            margin-top: 25px;
+        }
+        &__presents {
+            width: 100%;
+            &-item {
+                height: 111px;
+                width: 111px;
+                &:nth-child(3) {
+                    padding-left: 15px;
+                }
+            }
+            &-img {
+                max-width: 92px;
+                max-height: 90px;
+            }
+        }
+        &__content {
+            padding: 0;
+            width: 315px;
+            border: none;
+            flex-direction: column-reverse;
+            align-items: center;
+            div {
+                &:nth-child(2) {
+                    height: 259px;
+                }
+            }
+        }
+        &__text {
+            margin-bottom: 0;
         }
     }
 }
