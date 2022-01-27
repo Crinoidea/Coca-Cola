@@ -10,41 +10,41 @@
 </head>
 <body>
     <header class="header">
-        <a href="#">
+        <a href="#promo">
             <img src="icons/logo.png" alt="logo" class="header__logo">
         </a>
         <nav>
             <ul class="header__nav">
                 
                 <li class="header__item">
-                    <a href="#" class="header__link title title_fs16">
+                    <a href="#promo" class="header__link title title_fs16">
                         Main
                     </a>
-                    <a href="#" class="header__hover title title_fs16">
+                    <a href="#promo" class="header__hover title title_fs16">
                         Main
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link title title_fs16">
+                    <a href="#product" class="header__link title title_fs16">
                         About
                     </a>
-                    <a href="#" class="header__hover title title_fs16">
+                    <a href="#product" class="header__hover title title_fs16">
                         About
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link title title_fs16">
+                    <a href="#product" class="header__link title title_fs16">
                         Products
                     </a>
-                    <a href="#" class="header__hover title title_fs16">
+                    <a href="#product" class="header__hover title title_fs16">
                         Products
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link title title_fs16">
+                    <a href="#contact" class="header__link title title_fs16">
                         Contacts
                     </a>
-                    <a href="#" class="header__hover title title_fs16">
+                    <a href="#contact" class="header__hover title title_fs16">
                         Contacts
                     </a>
                 </li>
@@ -62,22 +62,22 @@
                 <nav class="menu__nav hide">
                     <ul class="menu__list">
                         <li>
-                            <a href="#" class="menu__link title title_risque">
+                            <a href="#promo" class="menu__link title title_risque">
                                 Main
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link title title_risque">
+                            <a href="#product" class="menu__link title title_risque">
                                 About
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link title title_risque">
+                            <a href="#product" class="menu__link title title_risque">
                                 Products
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link title title_risque">
+                            <a href="#contact" class="menu__link title title_risque">
                                 Contacts
                             </a>
                         </li>
@@ -91,7 +91,7 @@
 
     <img src="img/snowflake.svg" alt="snowflake" class="snowflake">
 
-    <section class="promo">
+    <section class="promo" data-section-name="promo">
         <img src="img/promo/stars.svg" alt="stars" class="promo__stars wow animate__animated animate__flash">
 
         <div class="container">
@@ -99,10 +99,10 @@
                 <div>
                     <h1 class="promo__header title title_risque">Main Site Title</h1>
                     <h4 class="promo__subheader title title_risque title_fs38">Lorem ipsum descripsum</h4>
-                    <button class="promo__btn title title_fs16">Call to action</button>
+                    <button href="#contact"class="promo__btn title title_fs16">Call to action</button>
                 </div>
 
-                <a href="#">
+                <a href="#product">
                     <img src="icons/arrow.svg" alt="arrow" class="promo__arrow">
                 </a>
             </div>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section class="product">
+    <section class="product" data-section-name="product">
         <div class="container">
             <div class="product__wrapper">
                 <div class="product__item">
@@ -183,7 +183,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" data-section-name="contact">
         <div class="container">
             <div class="contact__wrapper">
                 <h2 class="contact__header title title_risque title_fs56">
@@ -212,6 +212,8 @@
     </section>
 
     <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

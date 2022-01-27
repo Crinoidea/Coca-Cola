@@ -5,8 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu__block'),
           trigger = document.querySelector('.menu__close'),
           menuOverlay = document.querySelector('.menu__overlay'),
-          menuNav = document.querySelector('.menu__nav');
-        
+          menuNav = document.querySelector('.menu__nav'),
+          menuNavItem = document.querySelectorAll('.menu__link');
+    
     function showContent(item) {
         item.classList.add('show');
         item.classList.remove('hide');
@@ -22,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
         hideContent(menuNav);
         hideContent(menuOverlay);
     }
-
+    
     trigger.addEventListener('click', () => {
         if (!menu.classList.contains('menu__block_active') && !trigger.classList.contains('menu__close_active')) {
             menu.classList.add('menu__block_active', 'wow', 'animate__animated', 'animate__zoomIn');
@@ -34,12 +35,17 @@ window.addEventListener('DOMContentLoaded', () => {
             
             menuOverlay.addEventListener('click', () => {
                 closeMenu();
-            }) ;
+            });
+            menuNavItem.forEach(item => {
+                item.addEventListener('click', () => {
+                    closeMenu();
+                });
+            });
         } else {
             closeMenu();
         }
     });
-
+ 
     //Tabs present
 
     const tabs = document.querySelectorAll('.product__presents-item'),
@@ -69,5 +75,28 @@ window.addEventListener('DOMContentLoaded', () => {
                 showTabsContent(index);
             }        
         );
+    });
+
+    // Scroll page
+    $.scrollify({
+        section : "section",
+        sectionName : "section-name",
+        interstitialSection : "",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset : 0,
+        scrollbars: false,
+        standardScrollElements: "",
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll:true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {},
+        afterRender:function() {
+            $("a").on("click",$.scrollify.move);
+            $(".promo__btn").on("click",$.scrollify.move);
+        }
     });
 });
