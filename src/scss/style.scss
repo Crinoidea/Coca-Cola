@@ -28,7 +28,7 @@
     height: 523px;
     bottom: 40px;
     left: -218px;
-    z-index: 10;
+    z-index: 5;
     animation: flip 20s linear infinite;
 }
 @keyframes flip {
@@ -39,9 +39,15 @@
         transform: rotateY(360deg);
     }
 }
-.movedSnowflake {
-    bottom: -100px;
+@keyframes moveSnowflake {
+    from {
+        bottom: 40px;
+    }
+    to { 
+        bottom: -100px;
+    }
 }
+
 @keyframes snow {
     0% {
         background-position: 0px 0px;

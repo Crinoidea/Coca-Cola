@@ -120,5 +120,21 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
         smoothScroll($('[href*="#"]'), $('section'));
     }
+
+    // move Snowflake
+
+
+    
+
+    
+    $(window).on('scroll', function (event) {
+        event.preventDefault();
+
+        if (window.pageYOffset > $('.product').offset().top - 5) {
+            $('.snowflake').animate ({
+                bottom: -400 + 'px'
+            }, 1000);
+        }
+    });
 });
 

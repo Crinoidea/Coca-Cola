@@ -12,6 +12,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        z-index: 15;
         textarea {
             margin-top: 20px;
             padding: 9px 17px;
