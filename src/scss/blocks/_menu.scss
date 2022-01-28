@@ -15,8 +15,9 @@
         transition: 0.5s all;
         &_active {
             position: fixed;
-            right: -681px;
-            top: -681px;
+            padding: 400px 400px 0 0;
+            right: -635px;
+            top: -661px;
             width: 1520px;
             height: 1520px;
             border-radius: 100%;
@@ -65,9 +66,10 @@
     }
     &__nav {
         position: fixed;
-        height: 100vh;
-        top: 60%;
-        left: 438px;
+        max-width: 130px;
+        max-height: 250px;
+        top: 29%;
+        right: 320px;
         animation-delay: 0.3s;
     }
     &__list {

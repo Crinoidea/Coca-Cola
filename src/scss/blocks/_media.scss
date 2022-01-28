@@ -105,6 +105,20 @@
             display: none;
         }
     }
+    .menu {
+        &__block {
+            &_active {
+                width: 700px;
+                height: 1200px;
+                right: -223px;
+                top: -343px;
+            }
+        }
+        &__nav {
+            top: 22%;
+            right: 165px;
+        }
+    }
     .promo {
         &__stars {
             background-size: cover;
@@ -128,6 +142,20 @@
         &__block {
             top: 29px;
             right: 27px;
+            padding-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_active {
+                width: 300px;
+                height: 100vh;
+                right: -20px;
+                top: 0px;
+                border-radius: 5%;
+            }
+        }
+        &__nav {
+            right: 75px;
         }
     }
     .promo {
@@ -250,6 +278,17 @@
             font-size: 18px;
             line-height: 21px;
             color: #fff;
+        }
+    }
+    .menu {
+        &__block {
+            &_active {
+                width: 260px;
+            }
+        }
+        &__nav {
+            top: 30%;
+            right: 57px;
         }
     }
 }

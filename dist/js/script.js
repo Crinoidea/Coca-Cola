@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
         item.classList.remove('show');
     }
     function closeMenu() {
-        menu.classList.remove('menu__block_active', 'wow', 'animate__animated', 'animate__zoomIn');
+        menu.classList.remove('menu__block_active');
         trigger.classList.remove('menu__close_active');
         
         hideContent(menuNav);
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     trigger.addEventListener('click', () => {
         if (!menu.classList.contains('menu__block_active') && !trigger.classList.contains('menu__close_active')) {
-            menu.classList.add('menu__block_active', 'wow', 'animate__animated', 'animate__zoomIn');
+            menu.classList.add('menu__block_active');
             trigger.classList.add('menu__close_active');
 
             menuNav.classList.add('wow', 'animate__animated', 'animate__bounceInRight');
@@ -78,25 +78,30 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Scroll page
-    /* $.scrollify({
-        section : "section",
-        sectionName : "section-name",
-        interstitialSection : "",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: false,
-        standardScrollElements: "",
-        setHeights: true,
-        overflowScroll: true,
-        updateHash: true,
-        touchScroll:true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {},
-        afterRender:function() {
-            $("a").on("click",$.scrollify.move);
-            $(".promo__btn").on("click",$.scrollify.move);
-        }
-    }); */
+    
+    if (document.documentElement.clientWidth > 576) {
+        $.scrollify({
+            section : "section",
+            sectionName : "section-name",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: false,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: false,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {
+                $("a").on("click",$.scrollify.move);
+                $(".promo__btn").on("click",$.scrollify.move);
+            }
+        });
+    }    
 });
+
+console.log(document.documentElement.clientWidth);
