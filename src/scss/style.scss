@@ -22,12 +22,22 @@
     position: relative;
 }
 .snowflake {
+    display: block;
     position: absolute;
     width: 523px;
     height: 523px;
     bottom: 40px;
     left: -218px;
     z-index: 10;
+    animation: flip 20s linear infinite;
+}
+@keyframes flip {
+    from {
+        transform: none;
+    }
+    to { 
+        transform: rotateY(360deg);
+    }
 }
 .movedSnowflake {
     bottom: -100px;
