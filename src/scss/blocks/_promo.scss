@@ -45,7 +45,9 @@
     &__btn {
         margin-top: 20px;
         position: relative;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 186.35px;
         height: 44px;
         border: 2px solid #FFFFFF;
@@ -55,6 +57,7 @@
         z-index: 12;
         &:hover {
             background-color: #fff;
+            text-decoration: none;
             color: rgb(20, 20, 41);
         }
     }

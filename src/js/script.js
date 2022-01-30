@@ -115,7 +115,6 @@ $( document ).ready(function() {
             afterResize:function() {},
             afterRender:function() {
                 $("a").on("click",$.scrollify.move);
-                $(".promo__btn").on("click",$.scrollify.move);
             }
         });
     } else {
