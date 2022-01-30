@@ -22,10 +22,7 @@
         left: 53%;
         transform: translateX(-47%);
         z-index: 1;
-        animation-iteration-count: infinite;
-        animation-duration: 7s;
-        animation-timing-function: ease-out;
-
+        animation: appearance 1s linear infinite alternate-reverse;
     }
     .container {
         height: 100%;
@@ -78,7 +75,11 @@
         font-size: 18px;
         line-height: 21px;
         color: black;
+        opacity: 0;
+        animation-name: appearance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
         animation-delay: 3s;
+        animation-fill-mode: forwards;
     }
-    
 }

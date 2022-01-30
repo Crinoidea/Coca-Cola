@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-    new WOW().init();
 
     //open menu
     const menu = document.querySelector('.menu__block'),

@@ -1,0 +1,36 @@
+@keyframes moveSnowflake {
+    from {
+        bottom: 40px;
+    }
+    to { 
+        bottom: -100px;
+    }
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 1089px 581px;
+    }
+}
+
+@keyframes flip {
+    from {
+        transform: none;
+    }
+    to { 
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
