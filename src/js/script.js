@@ -81,10 +81,9 @@ window.addEventListener('DOMContentLoaded', () => {
         links.each((index, link) => {
             $(link).on('click', function (e) {
                 e.preventDefault();
-                
+
                 sections.each((index, item) => {
-                    if (item.className == link.hash.slice(1)) {
-                        
+                    if (item.className == $(this).attr('href').slice(1)) {
                         $('html, body').animate({
                             scrollTop: $(item).offset().top  
                         }, 1000);
