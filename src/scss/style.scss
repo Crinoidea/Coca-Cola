@@ -51,30 +51,18 @@
 @keyframes snow {
     0% {
         background-position: 0px 0px;
-        opacity: 0;
-    }
-    5% {
-        opacity: 1;
-    }
-    95% {
-        opacity: 1;
     }
     100% {
-        background-position: -200px 500px;
-        opacity: 0;
+        background-position: 1089px 581px;
     }
 }
 .snow {
     position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
     height: 100%;
     width: 100%;
     background: url(../img/snow.svg);
     animation: snow 20s linear infinite;
     z-index: 10;
-    transition: 0.2s;
 }
 
 
