@@ -123,18 +123,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // move Snowflake
 
-
-    
-
-    
-    $(window).on('scroll', function (event) {
-        event.preventDefault();
-
+    function parallaxScroll() {
         if (window.pageYOffset > $('.product').offset().top - 5) {
-            $('.snowflake').animate ({
-                bottom: -400 + 'px'
-            }, 1000);
+            $('.snowflake').css('bottom', '-400'+'px');
+        } else {
+            $('.snowflake').css('bottom', '40'+'px');
         }
+    }
+    
+    $(window).bind('scroll', function (event) {
+        event.preventDefault();
+        parallaxScroll();
     });
 });
 

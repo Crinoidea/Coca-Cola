@@ -28,6 +28,7 @@
     left: -218px;
     z-index: 5;
     animation: flip 20s linear infinite;
+    transition: 1.5s all;
 }
 @keyframes flip {
     from {
