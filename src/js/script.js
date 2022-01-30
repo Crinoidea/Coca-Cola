@@ -28,7 +28,6 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.add('menu__block_active');
             trigger.classList.add('menu__close_active');
 
-            menuNav.classList.add('wow', 'animate__animated', 'animate__bounceInRight');
             showContent(menuNav);
             showContent(menuOverlay);
             

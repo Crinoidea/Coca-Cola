@@ -70,7 +70,6 @@
         max-height: 250px;
         top: 29%;
         right: 320px;
-        animation-delay: 0.3s;
     }
     &__list {
         list-style: none;
@@ -79,6 +78,8 @@
         justify-content: space-between;
         align-items: center;
         height: 247px;
+        animation: showRight 1s;
+
     }
     &__link {
         font-size: 32px;

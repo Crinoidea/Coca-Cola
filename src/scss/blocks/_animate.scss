@@ -32,5 +32,16 @@
     to {
         opacity: 1;
     }
-    
 }
+
+@keyframes showRight {
+    from {
+        padding-left: 150px;
+        opacity: 0;
+    }
+    to {
+        padding-right: 0px;
+        opacity: 1;
+    }
+}
+
