@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (document.documentElement.clientWidth > 576) {
+   /*  if (document.documentElement.clientWidth > 576) {
         $.scrollify({
             section : "section",
             sectionName : "section-name",
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     } else {
         smoothScroll($('[href*="#"]'), $('section'));
-    }
+    } */
 
     // move Snowflake
 
