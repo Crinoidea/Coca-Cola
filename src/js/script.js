@@ -1,74 +1,78 @@
-window.addEventListener('DOMContentLoaded', () => {
+$( document ).ready(function() {
 
     //open menu
-    const menu = document.querySelector('.menu__block'),
-          trigger = document.querySelector('.menu__close'),
-          menuOverlay = document.querySelector('.menu__overlay'),
-          menuNav = document.querySelector('.menu__nav'),
-          menuNavItem = document.querySelectorAll('.menu__link');
+    const menu = $('.menu__block'),
+          trigger = $('.menu__close'),
+          menuOverlay = $('.menu__overlay'),
+          menuNav = $('.menu__nav'),
+          menuNavItem = $('.menu__link');
     
     function showContent(item) {
-        item.classList.add('show');
-        item.classList.remove('hide');
+        item.addClass('show');
+        item.removeClass('hide');
     }
     function hideContent(item) {
-        item.classList.add('hide');
-        item.classList.remove('show');
+        item.addClass('hide');
+        item.removeClass('show');
     }
     function closeMenu() {
-        menu.classList.remove('menu__block_active');
-        trigger.classList.remove('menu__close_active');
+        $(menu).removeClass('menu__block_active');
+        $(trigger).removeClass('menu__close_active');
         
         hideContent(menuNav);
         hideContent(menuOverlay);
     }
     
-    trigger.addEventListener('click', () => {
-        if (!menu.classList.contains('menu__block_active') && !trigger.classList.contains('menu__close_active')) {
-            menu.classList.add('menu__block_active');
-            trigger.classList.add('menu__close_active');
-
-            showContent(menuNav);
-            showContent(menuOverlay);
-            
-            menuOverlay.addEventListener('click', () => {
-                closeMenu();
-            });
-            menuNavItem.forEach(item => {
-                item.addEventListener('click', () => {
+    function openMenu() {
+        $(trigger).on('click', () => {
+            if (!menu.hasClass('menu__block_active') && !trigger.hasClass('menu__close_active')) {
+                $(menu).addClass('menu__block_active');
+                $(trigger).addClass('menu__close_active');
+    
+                showContent(menuNav);
+                showContent(menuOverlay);
+                
+                $(menuOverlay).on('click', () => {
                     closeMenu();
                 });
-            });
-        } else {
-            closeMenu();
-        }
-    });
+                $(menuNavItem).each((index, item) => {
+                    $(item).on('click', () => {
+                        closeMenu();
+                    });
+                });
+            } else {
+                closeMenu();
+            }
+        });
+    }
+    openMenu();
+
  
     //Tabs present
 
-    const tabs = document.querySelectorAll('.product__presents-item'),
-          tabsContent = document.querySelectorAll('.product__content');
+    const tabs = $('.product__presents-item'),
+          tabsContent = $('.product__content');
 
     function showTabsContent(index = 0) {
-        tabsContent[index].classList.add('show_flex', 'fade');
-        tabsContent[index].classList.remove('hide');
+        $(tabsContent[index]).addClass('show_flex', 'fade');
+        $(tabsContent[index]).removeClass('hide');
 
-        tabs[index].classList.add('product__presents-item_active');
+        $(tabs[index]).addClass('product__presents-item_active');
     }
 
     function hideTabsContent() {
-        tabsContent.forEach((item) => {
-            item.classList.remove('show_flex', 'fade');
-            item.classList.add('hide');
+        $(tabsContent).each((index, item) => {
+            $(item).removeClass('show_flex', 'fade');
+            $(item).addClass('hide');
         });
         
-        tabs.forEach(item => {
-            item.classList.remove('product__presents-item_active');
+        $(tabs).each((index, item) => {
+            $(item).removeClass('product__presents-item_active');
         });
     }
     
-    tabs.forEach((item, index) => {
-        item.addEventListener('click', () => {
+    $(tabs).each((index, item) => {
+        $(item).on('click', () => {
                 hideTabsContent();
                 showTabsContent(index);
             }        
@@ -78,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Scroll page
     function smoothScroll(links, sections) {
         links.each((index, link) => {
-            $(link).on('click', function (e) {
+            $(link).on('click', (e) => {
                 e.preventDefault();
 
                 sections.each((index, item) => {
