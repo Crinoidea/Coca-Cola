@@ -86,7 +86,7 @@ $( document ).ready(function() {
                 e.preventDefault();
 
                 sections.each((index, item) => {
-                    if (item.className == $(this).attr('href').slice(1)) {
+                    if (item.className == $(link).attr('href').slice(1)) {
                         $('html, body').animate({
                             scrollTop: $(item).offset().top  
                         }, 1000);
